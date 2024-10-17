@@ -3,15 +3,11 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Union',
-  tagline: 'Payment Transfer Service',
- // favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://union-uat.ist-pay.com/docs',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  title: 'Union Docs',
+  tagline: 'Payment Transfer Service',
+  url: 'https://SurPayTech.github.io', // GitHub username veya organization adınız.
+  baseUrl: '/union-docs/', // Projenizin repository adı.
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
