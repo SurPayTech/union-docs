@@ -1,0 +1,2 @@
+Projeyi başlatma komutu : npm start
+Projeye yeni versiyon ekleme komutu: npm run docusaurus docs:version 1.0.1
