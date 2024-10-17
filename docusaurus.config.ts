@@ -6,14 +6,14 @@ const config: Config = {
 
   title: 'Union Docs',
   tagline: 'Payment Transfer Service',
-  url: 'https://SurPayTech.github.io', // GitHub username veya organization adınız.
+  url: 'https://.github.com',
   baseUrl: '/union-docs/', // Projenizin repository adı.
+  organizationName: 'SurPay',
+  projectName:'union-docs',
+  deploymentBranch:'gh-pages',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SurPay', // Usually your GitHub org/user name.
-  // projectName: 'union-docs', // Usually your repo name.
-
+ 
+ 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -30,10 +30,13 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/SurPayTech/union-docs/edit/main/',
+          /* sidebarPath: './sidebars.ts', */
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
+         /*  customCss: './src/css/custom.css', */
         },
       } satisfies Preset.Options,
     ],
